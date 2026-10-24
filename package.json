@@ -1,0 +1,26 @@
+{
+ "name": "golden-kog-risk-debate",
+ "version": "0.1.0",
+ "description": "Two sided structure debate for token risk analysis: two advocates argue from measured facts, a reviewer weighs them. Risk only, no trading view.",
+ "type": "module",
+ "license": "MIT",
+ "main": "src/debate.ts",
+ "repository": "https://github.com/explore-miner-agent/golden-kog-risk-debate",
+ "engines": {
+  "node": ">=22"
+ },
+ "scripts": {
+  "test": "node --import tsx --test test/*.test.ts",
+  "coverage": "node --import tsx --test --experimental-test-coverage test/*.test.ts",
+  "typecheck": "tsc -p ."
+ },
+ "dependencies": {},
+ "devDependencies": {
+  "tsx": "^4.19.0",
+  "typescript": "^5.6.0",
+  "@types/node": "^22.0.0"
+ },
+ "exports": {
+  ".": "./src/debate.ts"
+ }
+}
